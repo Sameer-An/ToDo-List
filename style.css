@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Big+Shoulders+Stencil:opsz@10..72&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Baloo 2", sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(188, 187, 187, 0.608);
+}
+.container{
+    /* background-color: rgb(149, 179, 250); */
+    background-image: url(todo--bg.jpg);
+    background-repeat: repeat-y;
+    background-position:center;
+    background-size: calc(165%);
+    width: 85vmin;
+    height: 90vh;
+    overflow-y: auto;
+    margin: auto;
+    box-shadow: 7px 7px 20px rgb(103, 103, 103);
+    border-radius: 3%;
+    border: 1vmin solid rgb(255, 147, 47);
+    display: flex;
+    justify-content: center;
+    align-content: start;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 17px;
+}
+
+.heading{
+    width: 100%;
+    color: red;
+    text-shadow: 3px 5px 6px rgb(130, 130, 130);
+    /* background-color: rgb(119, 191, 255); */
+}
+
+.inpData{
+    width: 100%;
+    position: sticky;
+    top: 0%;
+    /* background-color: gray; */
+    /* height: 100px; */
+}
+
+.inpData input, .List-0{
+    height: 7vmin;
+    width: 70%;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 3px 2px 8px rgb(147, 147, 147);
+}
+
+.inpData button{
+    width: 20%;
+    height: 7vmin;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(58, 58, 253);
+    color: white;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.326);
+}
+
+.List-0{
+    text-align: start;
+    background-color: rgb(215, 234, 255);
+    width: 90%;
+    min-height: 5rem;
+    margin: 2.2vmin;
+    display: grid;
+    grid-template-columns: 1fr 1fr 4rem .4rem 4rem;
+    grid-template-rows:1fr 2rem 1fr;
+}
+
+.List-0 p{
+    grid-row: 1/4;
+    grid-column: 1/3;
+    word-wrap: break-word;
+    overflow-y: auto;
+}
+
+.E-btn1{
+    grid-column: 3/4;
+    background-color: aqua;
+}
+
+.E-btn2{
+    grid-column: 5/6;
+    background-color: aqua;
+}
+.E-btn1, .E-btn2{
+    grid-row: 2/3;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 1px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.326);
+}
+
+.E-btn1:hover, .E-btn2:hover, #ADD:hover{
+    color: rgb(227, 219, 219);
+    box-shadow: 1px 1px 8px rgba(142, 142, 142, 0.529);
+}
